@@ -1,0 +1,1 @@
+var loginError = "User is either not Logged in or not Activated yet,Please perform login to access these functionalities.";

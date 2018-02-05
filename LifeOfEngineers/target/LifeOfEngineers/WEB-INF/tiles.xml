@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/views/layout/layout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/views/layout/header.jsp"/>
+		<put-attribute name="menu" value="/views/layout/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/views/layout/footer.jsp"/>
+	</definition>
+	
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/views/home.jsp" />
+	</definition>
+
+	<definition name="aboutus" extends="base.definition">
+		<put-attribute name="title" value="AboutUS" />
+		<put-attribute name="body" value="/views/aboutus.jsp" />
+	</definition>
+	
+	<definition name="activities" extends="base.definition">
+		<put-attribute name="title" value="Activities" />
+		<put-attribute name="body" value="/views/activities.jsp" />
+	</definition>
+	
+	<definition name="events" extends="base.definition">
+		<put-attribute name="title" value="Events" />
+		<put-attribute name="body" value="/views/events.jsp" />
+	</definition>
+	
+	<definition name="galleries" extends="base.definition">
+		<put-attribute name="title" value="Galleries" />
+		<put-attribute name="body" value="/views/galleries.jsp" />
+	</definition>
+	
+	<definition name="contactus" extends="base.definition">
+		<put-attribute name="title" value="ContactUS" />
+		<put-attribute name="body" value="/views/contactus.jsp" />
+	</definition>
+	
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/views/login.jsp" />
+	</definition>
+	
+	<definition name="registration" extends="base.definition">
+		<put-attribute name="title" value="Registration" />
+		<put-attribute name="body" value="/views/registration.jsp" />
+	</definition>
+	
+	<definition name="error" extends="base.definition">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/views/error.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>
